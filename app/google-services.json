@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "775082194986",
+    "project_id": "myapp-cf190",
+    "storage_bucket": "myapp-cf190.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:775082194986:android:ad5c1f5397fcf129572b53",
+        "android_client_info": {
+          "package_name": "com.example.myapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNM2WHB_qwyeUpneeH5tXcons8lJlI7A0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

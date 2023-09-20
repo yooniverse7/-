@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/posting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/makeplaylist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="플레이리스트 만들기"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/add_movie_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="158dp"
+        android:layout_marginBottom="155dp"
+        android:text="영화추가"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/profileImg"
+        android:layout_width="214dp"
+        android:layout_height="222dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="220dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_add_photo_alternate_24" />
+
+    <EditText
+        android:id="@+id/title"
+        android:hint="제목"
+        android:layout_width="351dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/makeplaylist" />
+
+    <EditText
+        android:id="@+id/story"
+        android:hint="소개글(최대50자)"
+        android:layout_width="351dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <EditText
+        android:id="@+id/hashtag2"
+        android:layout_width="78dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="3dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="태그2"
+        app:layout_constraintEnd_toStartOf="@+id/hashtag3"
+        app:layout_constraintStart_toEndOf="@+id/hashtag1"
+        app:layout_constraintTop_toBottomOf="@+id/profileImg" />
+
+    <EditText
+        android:id="@+id/hashtag1"
+        android:layout_width="78dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="태그1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileImg" />
+
+    <EditText
+        android:id="@+id/hashtag3"
+        android:layout_width="78dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="86dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="태그3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileImg" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

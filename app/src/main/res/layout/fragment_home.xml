@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Homefragment">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/white">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/top_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ic_launcher_foreground"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:hint="검색어를 입력하세요"
+        android:cursorVisible="false"
+        android:enabled="false"
+        android:drawableRight="@drawable/baseline_search_24"
+        android:minWidth ="48dp"
+        android:minHeight ="48dp"
+        android:textSize="12sp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="16dp"
+        android:background="#00ff0000"
+        android:onClick="searchBar"
+        android:contentDescription="흠"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        />
+
+    <ImageButton
+        android:id="@+id/heartimage"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="345dp"
+        android:layout_marginTop="18dp"
+        android:background="#fff"
+        android:onClick="heartBar"
+        android:scaleType="fitXY"
+        android:src="@drawable/baseline_favorite_24"
+        android:contentDescription="흠"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_upload"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="130dp"/>
+
+
+
+</FrameLayout>
