@@ -11,6 +11,7 @@ data class ContentDTO(
     var tag1:String? ="",
     var tag2:String? = "",
     var tag3:String? = "",
+    var postId:String? = "",
     var imageUrl:String? = "",
     var date: Date =Date(),
     var favoriteCount: Int = 0,
@@ -19,6 +20,6 @@ data class ContentDTO(
     data class Comment(var uid: String? = "",
                        var userId: String? = "",
                        var comment: String? = "",
-                       var date: Date = Date())
+                       var timestamp: Long? = null)
 }
 

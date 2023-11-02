@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "775082194986",
-    "project_id": "myapp-cf190",
-    "storage_bucket": "myapp-cf190.appspot.com"
+    "project_number": "6662746408",
+    "project_id": "ottpl-183dc",
+    "storage_bucket": "ottpl-183dc.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:775082194986:android:ad5c1f5397fcf129572b53",
+        "mobilesdk_app_id": "1:6662746408:android:c93e1d7c1caaa17c5b601d",
         "android_client_info": {
           "package_name": "com.example.myapp"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCNM2WHB_qwyeUpneeH5tXcons8lJlI7A0"
+          "current_key": "AIzaSyCAumvchCue1Oi3QaOTgcf7uSo5cykHQaw"
         }
       ],
       "services": {

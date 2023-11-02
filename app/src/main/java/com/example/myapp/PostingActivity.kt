@@ -57,7 +57,7 @@ class PostingActivity : AppCompatActivity() {
             startActivityForResult(intent, IMAGE_PICK)
         }
 
-        // 업로드 버튼 클릭
+        // 영화추가 버튼 클릭
         uploadBtn.setOnClickListener {
             if (selectedImageUri != null) {
                 // 업로드할 이미지 파일 이름 생성
@@ -103,7 +103,7 @@ class PostingActivity : AppCompatActivity() {
             } else {
                 Toast.makeText(this, "이미지를 선택해주세요", Toast.LENGTH_SHORT).show()
             }
-            val intent = Intent(this, MainActivity ::class.java)
+            val intent = Intent(this, MakePlaylistMovieSearchActivity ::class.java)
             startActivity(intent)
         }
     }

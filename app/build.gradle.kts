@@ -11,7 +11,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.myapp"
-        minSdk = 33
+        minSdk = 30
         targetSdk = 33
         versionCode = 1
         versionName = "1.0"
@@ -44,9 +44,13 @@ android {
 dependencies {
 
 
+    implementation("com.github.bumptech.glide:glide:4.11.0")
+
+    annotationProcessor ("com.github.bumptech.glide:compiler:4.11.0")
     //바텀 메테리얼 디자인
     implementation("com.google.android.material:material:1.3.1")
 
+    implementation ("org.jsoup:jsoup:1.14.3")
     //원형 이미지
     implementation("de.hdodenhof:circleimageview:3.1.0")
 
@@ -56,6 +60,7 @@ dependencies {
     implementation("com.google.firebase:firebase-analytics-ktx")
 
     implementation("com.google.firebase:firebase-auth-ktx")
+    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
 
 
     implementation ("com.google.firebase:firebase-firestore-ktx")

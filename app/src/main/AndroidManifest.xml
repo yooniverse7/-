@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,6 +14,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApp"
         tools:targetApi="31">
+        <activity
+            android:name=".MakePlaylistMovieSearchResultsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MakePlaylistMovieSearchResultsAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".MakePlaylistMovieSearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MovieInfoAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".MovieInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SearchResultsFullAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".SearchResultsFullActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AlarmActivity"
+            android:exported="false" />
         <activity
             android:name=".SignUpActivity"
             android:exported="false" />
@@ -26,6 +52,15 @@
         </activity>
         <activity
             android:name=".PostingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PostDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CommentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OtherprofileActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

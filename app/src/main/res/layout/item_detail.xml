@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        android:gravity="center_vertical">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:id="@+id/detailviewitem_profile_image"
+            android:layout_width="46dp"
+            android:layout_height="47dp"
+            android:layout_marginLeft="7.5dp"
+            android:src="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/tv_profile_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:text="user nickname" />
+
+        <TextView
+            android:id="@+id/tv_explain_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-100dp"
+            android:layout_marginTop="13dp"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_post_image"
+        android:layout_width="384dp"
+        android:layout_height="360dp"
+        android:layout_gravity="center"
+
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:id="@+id/detailviewitem_comment_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/iv_favorite_post"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="bottom"
+            android:src="@drawable/baseline_favorite_border_24" />
+
+        <ImageView
+            android:id="@+id/iv_comment_post"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="bottom"
+            android:src="@drawable/baseline_insert_comment_24" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_favoritecounter_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:text="0" />
+
+</LinearLayout>

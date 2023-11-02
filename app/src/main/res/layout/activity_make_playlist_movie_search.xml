@@ -5,9 +5,7 @@
     android:id="@+id/search_fragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Searchfragment">
-
-    <!-- TODO: Update blank fragment layout -->
+    tools:context=".MakePlaylistMovieSearchResultsActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/my_toolbar"
@@ -36,35 +34,76 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.appcompat.widget.Toolbar>
 
+    <TextView
+        android:id="@+id/text_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        android:text="영화 추가"
+        android:textStyle="normal"
+        android:textSize="25sp" />
+
     <EditText
         android:id="@+id/input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="75dp"
+        android:layout_marginTop="87dp"
         android:layout_marginEnd="15dp"
         android:cursorVisible="true"
         android:drawableRight="@drawable/baseline_search_24"
         android:hint="검색어를 입력하세요"
+        android:textStyle="normal"
         android:imeOptions="actionSearch"
         android:inputType="text"
         android:minWidth="48dp"
         android:minHeight="48dp" />
-
-    <Button
-        android:id="@+id/seach_click"
+    <ImageButton
+        android:id="@+id/confirmButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="350dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="27dp"
+        android:text="확인"
+        android:src="@drawable/baseline_archive_24"
+        android:padding="10dp"
         android:contentDescription="검색"
-        android:text="검색"
-        android:padding="10dp"/>
+        android:minHeight="48dp"
+        android:minWidth="48dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rv_add_movie_list"
+        android:layout_marginTop="155dp"/>
+
+    <WebView
+        android:id="@+id/wv_add_movie_list"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <FrameLayout
         android:id="@+id/child_fragment_container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/seach_click"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="330dp"
+            android:layout_marginTop="85dp"
+            android:layout_marginEnd="10dp"
+            android:contentDescription="검색"
+            android:padding="10dp"
+            android:text="검색"
+            android:textStyle="bold" />
+    </FrameLayout>
 
 
 </FrameLayout>
